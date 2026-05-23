@@ -1,86 +1,77 @@
-# Stellar Notes DApp
+const expenseTrackerReadme = `# Stellar Expense Tracker DApp
 
-**Stellar Notes DApp** - Blockchain-Based Decentralized Note-Taking System
+**Stellar Expense Tracker DApp** - Blockchain-Based Decentralized Financial Tracking System
 
 ## Project Description
-Stellar Notes DApp is a decentralized smart contract solution built on the Stellar blockchain using Soroban SDK. It provides a secure, immutable platform for managing personal notes directly on the blockchain. The contract ensures that your data is stored transparently and is only manageable through predefined smart contract functions, eliminating reliance on centralized database providers.
+Stellar Expense Tracker DApp is a decentralized smart contract solution built on the Stellar blockchain using the Soroban SDK. It provides a secure, immutable platform for managing personal finances and logging daily expenses directly on the blockchain. The contract ensures that your financial data is stored transparently and is only manageable through predefined smart contract functions, eliminating reliance on centralized banking apps or third-party database providers.
 
-The system allows users to create, view, and delete notes, leveraging the efficiency and security of the Stellar network. Each note is uniquely identified and stored within the contract's instance storage, ensuring data persistence and reliability.
+The system allows users to record, view, aggregate, and delete expense entries, leveraging the high efficiency and security of the Stellar network. Each transaction is uniquely identified, categorized, and stored securely within the contract's instance storage, ensuring reliable financial tracking over time.
 
 ## Project Vision
-Our vision is to revolutionize personal productivity in the digital age by:
-- **Decentralizing Data**: Moving note-taking from centralized servers to a global, distributed blockchain
-- **Ensuring Ownership**: Empowering users to have complete control and ownership over their digital thoughts and information
-- **Guaranteeing Immutability**: Providing a permanent, tamper-proof record of notes that cannot be altered or deleted by third parties
-- **Enhancing Privacy**: Leveraging blockchain security to protect personal information from unauthorized access
-- **Building Trustless Systems**: Creating a platform where data integrity is guaranteed by code, not by company promises
+Our vision is to revolutionize personal financial management in the digital age by:
+- **Decentralizing Financial Data**: Moving expense logs from centralized servers to a global, distributed blockchain framework
+- **Ensuring Ownership**: Empowering users to have complete, sovereign control over their financial history and spending habits
+- **Guaranteeing Immutability**: Providing a permanent, tamper-proof ledger of financial outgoings that cannot be altered by third parties
+- **Enhancing Privacy**: Leveraging blockchain security to protect personal spending patterns from unauthorized access or data harvesting
+- **Building Trustless Systems**: Creating a platform where the integrity of your financial records is guaranteed by code, not by corporate promises
 
-We envision a future where digital information is truly personal and sovereign, empowering individuals with complete autonomy over their digital assets.
+We envision a future where financial data is truly personal, giving individuals complete autonomy and analytical power over their digital assets.
 
 ## Key Features
-### 1. **Simple Note Creation**
-- Create notes with just one function call
-- Specify title and content for each note
-- Automated ID generation for unique identification
-- Persistent storage on the Stellar blockchain
+### 1. **Simple Expense Logging**
+- Record new expenses with a single function call
+- Specify category and amount for accurate tracking
+- Automated unique ID generation for every transaction
+- High-capacity storage (\`u64\`) to safely handle large nominal values
 
 ### 2. **Efficient Data Retrieval**
-- Fetch all stored notes in a single call
-- Structured data representation for easy frontend integration
-- Quick access to your entire note collection
+- Fetch all stored expense records instantly
+- Structured data representation for seamless frontend integration
+- Quick access to your entire financial history
 - Real-time synchronization with the blockchain state
 
-### 3. **Secure Deletion**
-- Remove specific notes using their unique IDs
-- Permanent removal from the contract storage
-- Clean and efficient storage management
-- Immediate update of the note list after deletion
+### 3. **Automated Total Calculation**
+- Instantly compute the total accumulated expenses
+- On-chain mathematical execution for trustless auditing
+- Eliminates the need for manual off-chain calculations
 
-### 4. **Transparency and Security**
-- View all note activities on the blockchain
-- Blockchain-based verification of all storage actions
-- Immutable records of note creation and deletion
-- Protected against unauthorized modifications
+### 4. **Secure Deletion**
+- Remove specific erroneous expense entries using their unique IDs
+- Keep your financial ledger clean and accurate
+- Immediate state update of the expense list after removal
 
 ### 5. **Stellar Network Integration**
-- Leverages the high speed and low cost of Stellar
-- Built using the modern Soroban Smart Contract SDK
-- Scalable architecture for growing note collections
-- Interoperable with other Stellar-based services
+- Leverages the high speed and incredibly low cost of the Stellar network
+- Built using the modern, efficient Soroban Smart Contract SDK in Rust
+- Scalable architecture designed for years of daily expense logging
 
 ## Contract Details
-- Contract Address:CCBC2467JYY6QVXOQGA336ZH5FFCAUXXZBVRHL2N742DBYRRNHKZIMPQ
-  
+- Contract Address: \`[INSERT_YOUR_CONTRACT_ADDRESS_HERE]\`
 
 ## Future Scope
 ### Short-Term Enhancements
-1. **Note Encryption**: Support for end-to-end encryption of note content for enhanced privacy
-2. **Category Management**: Add tags and categories to organize notes efficiently
-3. **Rich Text Support**: Extend support beyond plain text to include Markdown and formatted content
-4. **Search Functionality**: Implement advanced search filters for large note collections
+1. **Monthly Budget Limits**: Smart contract logic to set spending limits and return warnings when nearing the cap
+2. **Multi-Currency Support**: Ability to record expenses in various fiat equivalents or native crypto tokens (like XLM or USDC)
+3. **Data Exporting**: Enhanced frontend tools to export the on-chain ledger to CSV for personal spreadsheet use
+4. **Advanced Categorization**: Implementing sub-categories and custom tagging for more granular tracking
 
 ### Medium-Term Development
-5. **Collaborative Notes**: Implement multi-signature requirements for shared or collaborative note-taking
-   - Shared access for multiple addresses
-   - Permission-based editing and viewing
-   - Version history tracking
-6. **Notification System**: Off-chain bridge to alert users of new updates or shared notes
-7. **Asset Attachment**: Capability to attach digital assets or tokens to specific notes
-8. **Inter-Contract Integration**: Allow other smart contracts to interact with and store data in the notes contract
+5. **Shared Wallets / Collaborative Tracking**: Implement multi-signature requirements for family or team expense tracking
+6. **Notification System**: Off-chain bridge to alert users of high-spending days or budget breaches
+7. **Receipt Attachment**: Capability to attach IPFS hashes of digital receipts to specific expense entries
+8. **Tokenized Cashback Rewards**: Smart contract integration to mint reward tokens for staying under budget
 
 ### Long-Term Vision
-9. **Cross-Chain Synchronization**: Extend note storage to multiple blockchain networks
-10. **Decentralized UI Hosting**: Host the frontend on IPFS or similar decentralized platforms
-11. **AI-Powered Summarization**: Optional integration with AI to help users summarize their notes
-12. **Privacy Layers**: Implement zero-knowledge proofs for completely private note content
-13. **DAO Governance**: Community-driven protocol improvements and feature prioritization
-14. **Identity Management**: Integration with decentralized identity (DID) systems for user management
+9. **AI-Powered Financial Analysis**: Integration with artificial intelligence models to analyze spending patterns and suggest investment strategies
+10. **Decentralized UI Hosting**: Host the dashboard entirely on IPFS or similar decentralized networks
+11. **Cross-Chain Synchronization**: Interoperability with other blockchains for unified multi-chain portfolio tracking
+12. **Privacy Layers**: Implement zero-knowledge (zk) proofs to keep exact transaction amounts and categories completely hidden
 
 ### Enterprise Features
-15. **Corporate Documentation**: Adapt the system for secure corporate record-keeping
-16. **Immutable Logging**: Create time-locked logs for audit purposes
-17. **Automated Reporting**: Automatic note triggers for periodic reporting
-18. **Multi-Language Support**: Expand accessibility with internationalization
+13. **Corporate Expense Management**: Adapt the system for secure, transparent corporate ledger keeping and employee reimbursements
+14. **Immutable Auditing**: Create time-locked, tamper-proof logs specifically designed for tax season and financial audits
+15. **Automated Tax Reporting**: Smart contract triggers that aggregate data into compliant tax formats
+16. **Role-Based Access Control**: Strict hierarchical permissions for enterprise accounting departments
 
 ---
 
@@ -90,11 +81,12 @@ We envision a future where digital information is truly personal and sovereign, 
 - Stellar blockchain network
 
 ## Getting Started
-Deploy the smart contract to Stellar's Soroban network and interact with it using the three main functions:
-- \`create_note()\` - Create a new note with a title and content
-- \`get_notes()\` - Retrieve all stored notes from the contract
-- \`delete_note()\` - Remove a specific note by its ID
+Deploy the smart contract to Stellar's Soroban network and interact with it using the four main functions:
+- \`add_expense()\` - Record a new expense with a category and amount
+- \`get_expenses()\` - Retrieve the full history of stored expenses
+- \`get_total()\` - Calculate and return the sum of all recorded expenses
+- \`delete_expense()\` - Remove a specific expense entry by its ID
 
 ---
 
-**Stellar Notes DApp** - Securing Your Thoughts on the Blockchain`;
+**Stellar Expense Tracker DApp** - Securing Your Finances on the Blockchain`;
