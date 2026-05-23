@@ -1,4 +1,4 @@
-const expenseTrackerReadme = `# Stellar Expense Tracker DApp
+# Stellar Expense Tracker DApp
 
 **Stellar Expense Tracker DApp** - Blockchain-Based Decentralized Financial Tracking System
 
@@ -46,7 +46,7 @@ We envision a future where financial data is truly personal, giving individuals 
 - Scalable architecture designed for years of daily expense logging
 
 ## Contract Details
-- Contract Address: \`[INSERT_YOUR_CONTRACT_ADDRESS_HERE]\`
+- Contract Address: CCBC2467JYY6QVXOQGA336ZH5FFCAUXXZBVRHL2N742DBYRRNHKZIMPQ
 
 ## Future Scope
 ### Short-Term Enhancements
