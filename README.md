@@ -88,5 +88,5 @@ Deploy the smart contract to Stellar's Soroban network and interact with it usin
 - \`delete_expense()\` - Remove a specific expense entry by its ID
 
 ---
-
+id = CD4GGLYYJXSNGN2C3LMYOF27I27R7B2DHNVUEXWYWGQN6XJNKFMRSFLH
 **Stellar Expense Tracker DApp** - Securing Your Finances on the Blockchain`;
